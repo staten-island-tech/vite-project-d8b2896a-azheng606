@@ -1,0 +1,23 @@
+.button {
+color: rgb(194, 218, 240);
+}
+
+.h1 {
+    text-align: center;
+    font-size: 55px;
+    padding: 20px;
+    background-color: rgb(133, 155, 175);
+    font-family: 'Rancho', cursive;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.gallery
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+
+}
