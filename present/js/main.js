@@ -1,5 +1,7 @@
 import '../style/style.css'
-import { princesses } from './princesses'
+import { littlemermaid } from './princesses'
+import {snowwhitesevendwarves} from './princesses'
 
-console.log(princesses);
+console.log(littlemermaid);
+console.log (snowwhitesevendwarves)
 
