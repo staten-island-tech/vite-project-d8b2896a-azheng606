@@ -1,14 +1,10 @@
-body, 
-html, 
-*{ 
-    background-color: aliceblue;
-    
-}
+
 h1 {
     text-align: center;
     font-size: 200%;
     padding: .5%;
     font-family: 'Rancho', cursive;
+    font-size: var(--h1);
   
 }
 
@@ -20,4 +16,22 @@ h1 {
     justify-content: space-around;
     align-content: center;
 
+}
+:root {
+    --dark:#61208b;
+    --light: #dfaff1; 
+    --white: #f6f3ed
+    --h1: 7.594 rem
+    --h2: 5.123 rem
+
+}
+.light {
+   --light: var(--light)
+}
+.dark{
+   --dark:  var(--dark)
+
+}
+body {
+    background-color: var(--white)
 }
