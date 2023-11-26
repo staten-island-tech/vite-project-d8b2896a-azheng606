@@ -1,40 +1,41 @@
+body, 
+html, 
+*{ 
+    background-color: var(--primary);
+}
 
 h1 {
     text-align: center;
-    font-size: var(--h1);
-    background-color: var(--black);
-    color: var(--light);
+    font-size: --h1;
+    color: var(--secondary);
   
 }
 
-.gallery
-{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    background-color: var(--secondary);
-
-}
 :root {
     --black: #000000;
     --light: #CBC3E3;
-    --dark: #301934;
+    --dark: #761187;
     --beige: #F5F5DC;
-    --h1: 7.594 rem;
+    --h1: 9.594 rem;
     --h2: 5.123 rem;
-    --h3: 3.375 rem ;
+    --h3: 3.375 rem;
     --h4: 2.25 rem;
     --h5: 1.5 rem;
     --primary: var(--light);
     --secondary:var(--beige);
 
 }
-
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center; }
+    
 .good {
    --primary: var(--light);
    --secondary:var(--beige);
+   
 }
 .bad{
   --primary: var(--dark);
