@@ -12,20 +12,26 @@ const littlemermaid = [
         Image: '/Urusla.jpg',
        Price: "10.90",
     },
-     {Name: "Max the Dog",
+     {
+        Name: "Max the Dog",
     Image: '/MaxtheDog.jpg',
-   Price: "10.90", },
+   Price: "10.90", 
+},
   
-   {Name: "Prince Eric",
+   {
+    Name: "Prince Eric",
     Image: '/PrinceEric.jpg',
-   Price: "10.90" ,},
+   Price: "10.90" ,
+},
 
-   {Name: "Lobster",
+   {
+    Name: "Lobster",
     Image: "/SebastianLoster.jpg",
-   Price: "10.90" ,},
+   Price: "10.90" ,
+},
 
     ];
-    console.log (littlemermaid)
+
 
     const snowwhitesevendwarves = [
         {
@@ -40,18 +46,4 @@ const littlemermaid = [
         },
     
     ]
-    console.log (snowwhitesevendwarves)
-
-    const DOMSelectors = {
-        first:document.querySelector(".first"), 
-        second:document.querySelector(".second"),
-        third:document.querySelector(".third"),
-        fourth:document.querySelector(".fourth"),
-        fifth:document.querySelector(".fifth"),}
     
-        DOMSelectors.first.addEventListener("click" ,function (event) { 
-            event.preventDefault();
-            console.log (littlemermaid); })
-    
-
-
