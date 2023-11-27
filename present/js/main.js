@@ -26,17 +26,19 @@ document.querySelector(".first").addEventListener("click", function () {
 
 })
 
+function idea () {
+    const ar = array.filter((array)=> array.title === "Little Mermaid")
+    ar.forEach ((ar)=> DOMSelectors.box.insertAdjacentHTML("beforeend", `
+    <div class="card">
+    <div class ="h1"> ${ar.name}</div>
+        <h3 class="card-title"> ${ar.price}</h3>
+        <img src= ${ar.image} class="card-img">
+    </div>`);
 
-const ar = array.filter((array)=> array.title === "Little Mermaid")
-console.log (ar);
-ar.forEach ((ar)=> 
-ar.Name.forEach((Name) => console.log(Name)))
+    ar.Name.forEach((Name) => console.log(Name)))
+}
+idea ()
 
-   /*  kids.forEach ((kid)=> 
-    kid.Siblings.forEach((Sibling) => console.log(Sibling)))
-    const out = kids.filter((kid)=> kid.Age < 10)
-    console.log(out);
- */
 
        /*  function poker () {
         DOMSelectors.box.insertAdjacentHTML("beforeend", `
@@ -47,4 +49,36 @@ ar.Name.forEach((Name) => console.log(Name)))
         </div>`)};
         console.log (poker)
 
+ */
+
+    /*     DOMSelectors.china.addEventListener("click", function (event)) */
+/* 
+       let buttons=  document.querySelectorAll("button")()
+
+       
+       buttons.forEach((btn)=> btn.addEventListener("click", function()(
+       //get value or text content of button to be compared later
+        let x = btn.textContent
+        let newArr = categories.filter ((category)=> category.cuisine ===x)
+        clearfields ()
+        poopy (newArr)
+       )))
+
+
+
+
+
+
+
+
+
+
+       function poopy (arr){
+        arr.forEach((x) => {
+            DOMSelectors.container.inseradjacent {beforeend, 
+                card h1, blah 
+            }
+        })
+       }
+       poopy ()
  */
