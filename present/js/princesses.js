@@ -1,21 +1,23 @@
-export {littlemermaid}
-export {snowwhitesevendwarves}
+export {array}
 
-const littlemermaid = [
+const array = [
     {
         Name: " Ariel",
         Image: '/Ariel.jpg',
         Price: "$22.90",
+        Title: "Little Mermaid",
     },  
     {
         Name: "Ursula",
         Image: '/Urusla.jpg',
        Price: "10.90",
+       Title: "Little Mermaid",
     },
      {
         Name: "Max the Dog",
     Image: '/MaxtheDog.jpg',
    Price: "10.90", 
+   Title: "Little Mermaid",
 },
   
    {
@@ -26,24 +28,93 @@ const littlemermaid = [
 
    {
     Name: "Lobster",
-    Image: "/SebastianLoster.jpg",
+    Image: '/Lobster.jpg',
    Price: "10.90" ,
+   Title: "Little Mermaid",
 },
 
-    ];
+{
+    Name: "King Triton",
+    Image: '/father.jpg',
+    Price: "38.20",
+    Title: "Little Mermaid", },
 
-
-    const snowwhitesevendwarves = [
         {
             Name: " Snow",
-            Image: 'https://m.media-amazon.com/images/I/91Wx8zpDbhL.jpg',
-            Price: "$2.90"
+            Image: '/Snow.jpg',
+            Price: "$2.90",
+            Title: "Snow White and Seven Dwarves",
         },  
         {
             Name: "Prince",
-            Image: 'https://static.wikia.nocookie.net/princessdisney/images/a/ab/Florian.png/revision/latest?cb=20130709121636',
+            Image: '/Prince.jpg',
            Price: "108.90",
+           Title: "Snow White and Seven Dwarves",
         },
+        {
+            Name: "Evil Stepmother",
+            Image: '/Snowmom.jpg',
+           Price: "48.20",
+           Title: "Snow White and Seven Dwarves",
+        },
+        {
+            Name: "Dopey",
+            Image: '/Dopey.webp',
+           Price: "108.90",
+           Title: "Snow White and Seven Dwarves",
+        },
+        {
+            Name: "Grumpy",
+            Image: '/Grumpy.webp',
+           Price: "14.32",
+           Title: "Snow White and Seven Dwarves",
+        },
+
+        {
+            Name: "Snnezy",
+            Image: '/Sneezy.jpg',
+           Price: "12.22",
+           Title: "Snow White and Seven Dwarves",
+        },
+        
+
+        {
+            Name: "Cinderella",
+            Image: "/Cinderella.jpg",
+            Price: "109.22",
+            Title: "Glass Slippers",
     
-    ]
-    
+        },
+        {
+            Name: "Prince Charming",
+            Image: "/Charming.webp",
+            Price: "10.22",
+            Title: "Glass Slippers",
+        },
+        
+{
+            Name: "Stepmom Lady Tremaine",
+            Image: "/Tremaine.jpg",
+            Price: "101.23",
+            Title: "Glass Slippers",
+ },
+{
+        Name: "Anastasia",
+        Image: "/Anastasia.webp",
+        Price: "17.22",
+        Title: "Glass Slippers",
+},
+{
+    Name: "Drizelle",
+    Image: "/Drizelle.jpg",
+    Price: "19.22",
+    Title: "Glass Slippers",
+},
+{
+    Name: "Fairy godmother",
+    Image: "/Godmother.jpg",
+    Price: "35.22",
+    Title: "Glass Slippers",
+},
+
+    ];
