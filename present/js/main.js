@@ -11,7 +11,8 @@ const DOMSelectors = {
     third:document.querySelector(".third"),
 }
 
-    DOMSelectors.change.addEventListener("click", function () {
+    DOMSelectors.change.addEventListener("click", function (event) {
+    event.preventDefault();
  if (document.body.classList.contains("good")){
         document.body.classList.add("bad")
         document.body.classList.remove ("good");
