@@ -27,14 +27,16 @@ document.querySelector(".first").addEventListener("click", function () {
 })
 
 
-const ar = littlemermaid.filter((littlemermaid)=> littlemermaid.name === "Ariel")
-littlemermaid.forEach ((littlemermaid)=> console.log(littlemermaid.Name))
+const ar = array.filter((array)=> array.title === "Little Mermaid")
+console.log (ar);
+ar.forEach ((ar)=> 
+ar.Name.forEach((Name) => console.log(Name)))
 
-    kids.forEach ((kid)=> 
+   /*  kids.forEach ((kid)=> 
     kid.Siblings.forEach((Sibling) => console.log(Sibling)))
     const out = kids.filter((kid)=> kid.Age < 10)
     console.log(out);
-
+ */
 
        /*  function poker () {
         DOMSelectors.box.insertAdjacentHTML("beforeend", `
