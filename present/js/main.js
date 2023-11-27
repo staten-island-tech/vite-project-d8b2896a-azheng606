@@ -1,10 +1,17 @@
 import '../style/style.css'
 import { array } from './princesses'
-
 console.log(array);
 
+const DOMSelectors = {
+    box:document.querySelector(".box"),
+    form: document.querySelector("#form"),
+    change: document.querySelector(".change"),
+    first: document.querySelector(".first"),
+    second:document.querySelector(".second"),
+    third:document.querySelector(".third"),
+}
 
-document.querySelector(".change").addEventListener("click", function () {
+    DOMSelectors.change.addEventListener("click", function () {
  if (document.body.classList.contains("good")){
         document.body.classList.add("bad")
         document.body.classList.remove ("good");
