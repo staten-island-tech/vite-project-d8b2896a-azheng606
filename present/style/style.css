@@ -8,6 +8,7 @@ h1 {
     text-align: center;
     font-size: --h1;
     color: var(--secondary);
+    background-color: var(--primary);
   
 }
 
@@ -17,10 +18,9 @@ h1 {
     --dark: #761187;
     --beige: #F5F5DC;
     --h1: 9.594 rem;
-    --h2: 5.123 rem;
-    --h3: 3.375 rem;
-    --h4: 2.25 rem;
-    --h5: 1.5 rem;
+    --h2: 7.125 rem;
+    --h3: 5.375 rem;
+
     --primary: var(--light);
     --secondary:var(--beige);
 
@@ -42,4 +42,42 @@ h1 {
   --primary: var(--dark);
   --secondary: var(--black);
 
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center; 
+}
+
+.name {
+    font-size: 3vh;
+    margin-top: 20px ;
+    text-align: center;
+    color: var(--primary);
+    background-color: var(--secondary);
+
+}
+
+.card-img {
+    width: 50vh;
+    height: 50vh; 
+    align-items: center;
+}
+
+.card-desc {
+        text-align: center;
+        font-size: 2vh;
+        background-color: var(--secondary);
+        color: var(--primary);
+}
+
+.card {
+    background-color: var(--secondary);
+    height: 50 rem;
+        width: 50 rem;
+        align-items: center;
+        margin: 12px 1px;
 }

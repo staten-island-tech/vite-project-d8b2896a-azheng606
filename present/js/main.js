@@ -1,15 +1,9 @@
 import '../style/style.css'
 import { array } from './princesses'
+import { DOMSelectors } from './dom';
 console.log(array);
+console.log (DOMSelectors)
 
-const DOMSelectors = {
-    box:document.querySelector(".box"),
-    form: document.querySelector("#form"),
-    change: document.querySelector(".change"),
-    first: document.querySelector(".first"),
-    second:document.querySelector(".second"),
-    third:document.querySelector(".third"),
-}
 
     DOMSelectors.change.addEventListener("click", function (event) {
     event.preventDefault();
@@ -22,35 +16,59 @@ const DOMSelectors = {
         } 
 })
 
-document.querySelector(".first").addEventListener("click", function () { 
-
-})
-
-function idea () {
-    const ar = array.filter((array)=> array.title === "Little Mermaid")
+DOMSelectors.first.addEventListener("click", function idea (event) { 
+    event.preventDefault();
+    clearfields (event)
+    const ar = array.filter((array)=> array.Title === "Little Mermaid")
     ar.forEach ((ar)=> DOMSelectors.box.insertAdjacentHTML("beforeend", `
     <div class="card">
-    <div class ="h1"> ${ar.name}</div>
-        <h3 class="card-title"> ${ar.price}</h3>
-        <img src= ${ar.image} class="card-img">
-    </div>`);
+    <div class ="name"> ${ar.Name}</div>
+    <img src= ${ar.Image} class="card-img">
+        <h3 class="card-desc"> ${ar.Price}</h3>
+    </div>`));
+})
 
-    ar.Name.forEach((Name) => console.log(Name)))
-}
-idea ()
+DOMSelectors.second.addEventListener("mousedown", function idea (twice) { 
+    clearfields (twice)
+    const arr = array.filter((array)=> array.Title === "Snow White and Seven Dwarves")
+    arr.forEach ((arr)=> DOMSelectors.box.insertAdjacentHTML("beforeend", `
+    <div class="card">
+    <div class ="name"> ${arr.Name}</div>
+    <img src= ${arr.Image} class="card-img">
+        <h3 class="card-desc"> ${arr.Price}</h3>
+    </div>`));
+})
+
+DOMSelectors.third.addEventListener("click", function idea (thrice) { 
+    clearfields (thrice)
+    const arrr = array.filter((array)=> array.Title === "Glass Slippers")
+    arrr.forEach ((arrr)=> DOMSelectors.box.insertAdjacentHTML("beforeend", `
+    <div class="card">
+    <div class ="name"> ${arrr.Name}</div>
+    <img src= ${arrr.Image} class="card-img">
+        <h3 class="card-desc"> ${arrr.Price}</h3>
+    </div>`));
+}) 
+
+function clearfields ()  {
+    DOMSelectors.box.value = "" ;
+
+    }
 
 
-       /*  function poker () {
-        DOMSelectors.box.insertAdjacentHTML("beforeend", `
-        <div class="card">
-        <div class ="h1"> ${littlemermaid.forEach.name}</div>
-            <h3 class="card-title"> ${littlemermaid.forEach.price}</h3>
-            <img src= ${littlemermaid.forEach.image} class="card-img">
-        </div>`)};
-        console.log (poker)
 
- */
 
+
+
+
+
+
+
+
+
+
+
+ 
     /*     DOMSelectors.china.addEventListener("click", function (event)) */
 /* 
        let buttons=  document.querySelectorAll("button")()

@@ -4,13 +4,13 @@ const array = [
     {
         Name: " Ariel",
         Image: '/Ariel.jpg',
-        Price: "$22.90",
+        Price: "22.90",
         Title: "Little Mermaid",
     },  
     {
         Name: "Ursula",
-        Image: '/Urusla.jpg',
-       Price: "10.90",
+        Image: '/Ursula.jpg',
+       Price: "102.17",
        Title: "Little Mermaid",
     },
      {
@@ -23,13 +23,14 @@ const array = [
    {
     Name: "Prince Eric",
     Image: '/PrinceEric.jpg',
-   Price: "10.90" ,
+   Price: "294.20" ,
+   Title: "Little Mermaid"
 },
 
    {
     Name: "Lobster",
     Image: '/Lobster.jpg',
-   Price: "10.90" ,
+   Price: "129.00" ,
    Title: "Little Mermaid",
 },
 
