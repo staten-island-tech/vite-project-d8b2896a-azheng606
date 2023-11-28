@@ -7,5 +7,4 @@ const DOMSelectors = {
     first: document.querySelector(".first"),
     second:document.querySelector(".second"),
     third:document.querySelector(".third"),
-    middle : document.querySelector(".middle")
 }

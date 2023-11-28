@@ -5,8 +5,8 @@ console.log(array);
 console.log (DOMSelectors)
 
 
-  
-/*  DOMSelectors.first.addEventListener("click", function idea (event) { 
+  /* 
+DOMSelectors.first.addEventListener("click", function idea (event) { 
     event.preventDefault();
     clearfields (event)
     const ar = array.filter((array)=> array.Title === "Little Mermaid")
@@ -16,9 +16,9 @@ console.log (DOMSelectors)
     <img src= ${ar.Image} class="card-img">
         <h3 class="card-desc"> ${ar.Price}</h3>
     </div>`));
-}) */
-/*
-DOMSelectors.second.addEventListener("mousedown", function idea (twice) { 
+}) 
+ */
+/* DOMSelectors.second.addEventListener("mousedown", function idea (twice) { 
     clearfields (twice)
     const arr = array.filter((array)=> array.Title === "Snow White and Seven Dwarves")
     arr.forEach ((arr)=> DOMSelectors.box.insertAdjacentHTML("beforeend", `
@@ -39,30 +39,30 @@ DOMSelectors.third.addEventListener("click", function idea (thrice) {
         <h3 class="card-desc"> ${arrr.Price}</h3>
     </div>`));
 }) 
-
  */
+ 
 function clearfields ()  {
     DOMSelectors.box.innerHTML = "" ;
 
     }
 
 function yes (arr){
-    arr.forEach((box)=> DOMSelectors.box.insertAdjacentHTML("beforeend",  `
+    arr.forEach((el)=> {DOMSelectors.box.insertAdjacentHTML("beforeend",  `
     <div class="card">
-    <div class ="name"> ${box.Name}</div>
-    <img src= ${box.Image} class="card-img">
-        <h3 class="card-desc"> ${box.Price}</h3>
-    </div>`));
-}
-yes(array)
+    <div class ="name"> ${el.Name}</div>
+    <img src= ${el.Image} class="card-img">
+        <h3 class="card-desc"> ${el.Price}</h3>
+    </div>`)})};
 
-const buttons = document.querySelectorAll ('button');
+let buttons = document.querySelectorAll (".first, .second, .third")
 buttons.forEach((btn)=> btn.addEventListener("click", function () {
-    const type = btn.textContent.toLowerCase()
-    const newArr = array.filter ((array)=> array.Title===type);
-    clearfields();
+    let type = btn.textContent
+    let newArr = array.filter ((array)=> array.Title === type )
+    clearfields()
+    yes (array)
     yes (newArr)
-;}))
+
+})) 
 
 DOMSelectors.change.addEventListener("click", function (event) {
     event.preventDefault();
@@ -73,7 +73,7 @@ DOMSelectors.change.addEventListener("click", function (event) {
             document.body.classList.add("good")
             document.body.classList.remove("bad")
         } 
-})
+});
 
 
 
