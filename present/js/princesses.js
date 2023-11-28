@@ -48,7 +48,7 @@ const array = [
         },  
         {
             Name: "Prince",
-            Image: '/Prince.jpg',
+            Image: '/SnowPrince.jpg',
            Price: "108.90",
            Title: "Snow White and Seven Dwarves",
         },

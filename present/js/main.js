@@ -16,7 +16,7 @@ console.log (DOMSelectors)
         } 
 })
 
-DOMSelectors.first.addEventListener("click", function idea (event) { 
+/* DOMSelectors.first.addEventListener("click", function idea (event) { 
     event.preventDefault();
     clearfields (event)
     const ar = array.filter((array)=> array.Title === "Little Mermaid")
@@ -55,48 +55,15 @@ function clearfields ()  {
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-    /*     DOMSelectors.china.addEventListener("click", function (event)) */
-/* 
-       let buttons=  document.querySelectorAll("button")()
-
-       
-       buttons.forEach((btn)=> btn.addEventListener("click", function()(
-       //get value or text content of button to be compared later
-        let x = btn.textContent
-        let newArr = categories.filter ((category)=> category.cuisine ===x)
-        clearfields ()
-        poopy (newArr)
-       )))
-
-
-
-
-
-
-
-
-
-
-       function poopy (arr){
-        arr.forEach((x) => {
-            DOMSelectors.container.inseradjacent {beforeend, 
-                card h1, blah 
-            }
-        })
-       }
-       poopy ()
  */
+function filters ()
+let buttons = document.querySelectorAll ('#btn')
+buttons.forEach((btn)=> btn.addEventListener("click", function () {
+    let type = btn.textContent.toLowerCase()
+    let newArr = array.filter ((array)=> array.title)
+}))
+
+
+
+
+
