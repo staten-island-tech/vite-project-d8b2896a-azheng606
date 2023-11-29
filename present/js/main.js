@@ -57,12 +57,13 @@ function yes (arr){
 let buttons = document.querySelectorAll (".first, .second, .third")
 buttons.forEach((btn)=> btn.addEventListener("click", function () {
     let type = btn.textContent
-    let newArr = array.filter ((array)=> array.Title === type )
+    let newArr = array.filter ((element)=> element.Title === type )
     clearfields()
-    yes (array)
     yes (newArr)
-
+    yes (arr)
 })) 
+
+
 
 DOMSelectors.change.addEventListener("click", function (event) {
     event.preventDefault();
