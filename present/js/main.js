@@ -5,7 +5,7 @@ console.log(array);
 console.log (DOMSelectors)
 
 
-DOMSelectors.first.addEventListener("click", function idea () { 
+/* DOMSelectors.first.addEventListener("click", function idea () { 
     clearfield ()
     const ar = array.filter((array)=> array.Title === "Little Mermaid")
     ar.forEach ((ar)=> DOMSelectors.box.insertAdjacentHTML("beforeend", `
@@ -37,13 +37,13 @@ DOMSelectors.third.addEventListener("click", function idea () {
         <h3 class="card-desc"> ${arrr.Price}</h3>
     </div>`));
 }) 
-
+ */
 
 function clearfield ()  {
     DOMSelectors.box.innerHTML = "" ;
     }
 
-/* function yes (arr){
+ function yes (arr){
     arr.forEach((el)=> {DOMSelectors.box.insertAdjacentHTML("beforeend",  `
     <div class="card">
     <div class ="name"> ${el.Name}</div>
@@ -58,7 +58,7 @@ buttons.forEach((btn)=> btn.addEventListener("click", function () {
     clearfield ()
     yes (newArr)
     yes (arr)
-}))  */
+}))
 
 DOMSelectors.change.addEventListener("click", function (event) {
     event.preventDefault();
