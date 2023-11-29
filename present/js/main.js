@@ -4,11 +4,10 @@ import { DOMSelectors } from './dom';
 console.log(array);
 console.log (DOMSelectors)
 
-
   /* 
 DOMSelectors.first.addEventListener("click", function idea (event) { 
     event.preventDefault();
-    clearfields (event)
+    clearfield (event)
     const ar = array.filter((array)=> array.Title === "Little Mermaid")
     ar.forEach ((ar)=> DOMSelectors.box.insertAdjacentHTML("beforeend", `
     <div class="card">
@@ -19,7 +18,7 @@ DOMSelectors.first.addEventListener("click", function idea (event) {
 }) 
  */
 /* DOMSelectors.second.addEventListener("mousedown", function idea (twice) { 
-    clearfields (twice)
+    clearfield (twice)
     const arr = array.filter((array)=> array.Title === "Snow White and Seven Dwarves")
     arr.forEach ((arr)=> DOMSelectors.box.insertAdjacentHTML("beforeend", `
     <div class="card">
@@ -30,7 +29,7 @@ DOMSelectors.first.addEventListener("click", function idea (event) {
 })
 
 DOMSelectors.third.addEventListener("click", function idea (thrice) { 
-    clearfields (thrice)
+    clearfield (thrice)
     const arrr = array.filter((array)=> array.Title === "Glass Slippers")
     arrr.forEach ((arrr)=> DOMSelectors.box.insertAdjacentHTML("beforeend", `
     <div class="card">
@@ -40,10 +39,9 @@ DOMSelectors.third.addEventListener("click", function idea (thrice) {
     </div>`));
 }) 
  */
- 
-function clearfields ()  {
-    DOMSelectors.box.innerHTML = "" ;
 
+function clearfield ()  {
+    DOMSelectors.box.innerHTML = "" ;
     }
 
 function yes (arr){
@@ -58,12 +56,10 @@ let buttons = document.querySelectorAll (".first, .second, .third")
 buttons.forEach((btn)=> btn.addEventListener("click", function () {
     let type = btn.textContent
     let newArr = array.filter ((element)=> element.Title === type )
-    clearfields()
+    clearfield ()
     yes (newArr)
     yes (arr)
 })) 
-
-
 
 DOMSelectors.change.addEventListener("click", function (event) {
     event.preventDefault();
@@ -75,8 +71,3 @@ DOMSelectors.change.addEventListener("click", function (event) {
             document.body.classList.remove("bad")
         } 
 });
-
-
-
-
-
