@@ -72,7 +72,7 @@ const array = [
         },
 
         {
-            Name: "Snnezy",
+            Name: "Sneezy",
             Image: '/Sneezy.jpg',
            Price: "12.22",
            Title: "Snow White and Seven Dwarves",

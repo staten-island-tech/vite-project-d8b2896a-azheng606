@@ -2,29 +2,17 @@ body,
 html, 
 *{ 
     background-color: var(--primary);
+    margin: 0;
+    align-items: center;
 }
 
 h1 {
     text-align: center;
-    font-size: --h1;
+    font-size: var(--h1);
     color: var(--secondary);
-    background-color: var(--primary);
-  
+    padding-top: 20px;
 }
 
-:root {
-    --black: #000000;
-    --light: #CBC3E3;
-    --dark: #761187;
-    --beige: #F5F5DC;
-    --h1: 9.594 rem;
-    --h2: 7.125 rem;
-    --h3: 5.375 rem;
-
-    --primary: var(--light);
-    --secondary:var(--beige);
-
-}
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -62,9 +50,10 @@ h1 {
 }
 
 .card-img {
-    width: 50vh;
-    height: 50vh; 
+    width: 80%;
+    height: 80%; 
     align-items: center;
+    margin-left: 10.1%;
 }
 
 .card-desc {
@@ -72,12 +61,51 @@ h1 {
         font-size: var(--h3);
         background-color: var(--secondary);
         color: var(--primary);
+
 }
 
 .card {
     background-color: var(--secondary);
-    height: 50 rem;
-        width: 50 rem;
-        align-items: center;
-        margin: 12px 1px;
+    align-items: center;
+    margin: 12px 1px;
+    border-radius: 3%;
+    width: 25rem;
+    height: 33rem;
+
 }
+
+:root {
+    --black: #000000;
+    --light: #CBC3E3;
+    --dark: #8f5599;
+    --beige: #F5F5DC;
+    --h1: 3.375rem;
+    --h2: 2.25rem;
+    --h3: 1.5rem;
+
+    --primary: var(--light);
+    --secondary:var(--beige);
+}
+
+.card:hover{
+    transform: scale(1.03) rotate(1.2deg) translate(15px,8px);
+    transition: 0.7s;
+ 
+} 
+
+
+@media screen and (max-width:1200px){
+    .card {
+        width: 28%;
+    }
+ }
+@media screen and (max-width:1000px){
+    .card {
+        width: 43%;
+    }
+ }
+ @media screen and (max-width:500px){
+    .card {
+        width: 95%;
+    }
+ }
