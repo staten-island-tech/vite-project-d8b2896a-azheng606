@@ -7,4 +7,5 @@ const DOMSelectors = {
     first: document.querySelector(".first"),
     second:document.querySelector(".second"),
     third:document.querySelector(".third"),
+    all:document.querySelector(".all"),
 }

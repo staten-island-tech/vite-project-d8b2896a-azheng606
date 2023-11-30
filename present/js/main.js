@@ -5,7 +5,17 @@ console.log(array);
 console.log (DOMSelectors)
 
 
-/* DOMSelectors.first.addEventListener("click", function idea () { 
+/* DOMSelectors.all.addEventListener("mousedown", function everything () { 
+    clearfield ()
+    array.forEach ((aa)=> DOMSelectors.box.insertAdjacentHTML("beforeend", `
+    <div class="card">
+    <div class ="name"> ${aa.Name}</div>
+    <img src= ${aa.Image} class="card-img">
+        <h3 class="card-desc"> ${aa.Price}</h3>
+    </div>`));
+})
+ 
+ DOMSelectors.first.addEventListener("click", function idea () { 
     clearfield ()
     const ar = array.filter((array)=> array.Title === "Little Mermaid")
     ar.forEach ((ar)=> DOMSelectors.box.insertAdjacentHTML("beforeend", `
@@ -37,29 +47,11 @@ DOMSelectors.third.addEventListener("click", function idea () {
         <h3 class="card-desc"> ${arrr.Price}</h3>
     </div>`));
 }) 
- */
+  */
 
 function clearfield ()  {
     DOMSelectors.box.innerHTML = "" ;
     }
-
- function yes (arr){
-    arr.forEach((el)=> {DOMSelectors.box.insertAdjacentHTML("beforeend",  `
-    <div class="card">
-    <div class ="name"> ${el.Name}</div>
-    <img src= ${el.Image} class="card-img">
-        <h3 class="card-desc"> ${el.Price}</h3>
-    </div>`)})};
-
-let buttons = document.querySelectorAll (".first, .second, .third")
-buttons.forEach((btn)=> btn.addEventListener("click", function () {
-    let type = btn.textContent
-    let newArr = array.filter ((element)=> element.Title === type )
-    clearfield ()
-    yes (newArr)
-    yes (arr)
-}))
-
 DOMSelectors.change.addEventListener("click", function (event) {
     event.preventDefault();
  if (document.body.classList.contains("good")){
@@ -70,3 +62,21 @@ DOMSelectors.change.addEventListener("click", function (event) {
             document.body.classList.remove("bad")
         } 
 });
+
+
+ function yes (arr){
+    arr.forEach((el)=> {DOMSelectors.box.insertAdjacentHTML("beforeend",  `
+    <div class="card">
+    <div class ="name"> ${el.Name}</div>
+    <img src= ${el.Image} class="card-img">
+        <h3 class="card-desc"> ${el.Price}</h3>
+    </div>`)})};
+    yes (arr)
+
+let buttons = document.querySelectorAll (".first, .second, .third")
+buttons.forEach((btn)=> btn.addEventListener("click", function () {
+    let type = btn.textContent
+    let newArr = array.filter ((element)=> element.Title === type )
+    clearfield ()
+    yes (newArr)
+}))
