@@ -52,6 +52,7 @@ DOMSelectors.third.addEventListener("click", function idea () {
 function clearfield ()  {
     DOMSelectors.box.innerHTML = "" ;
     }
+
 DOMSelectors.change.addEventListener("click", function (event) {
     event.preventDefault();
  if (document.body.classList.contains("good")){
@@ -63,7 +64,6 @@ DOMSelectors.change.addEventListener("click", function (event) {
         } 
 });
 
-
  function yes (arr){
     arr.forEach((el)=> {DOMSelectors.box.insertAdjacentHTML("beforeend",  `
     <div class="card">
@@ -71,7 +71,7 @@ DOMSelectors.change.addEventListener("click", function (event) {
     <img src= ${el.Image} class="card-img">
         <h3 class="card-desc"> ${el.Price}</h3>
     </div>`)})};
-    yes (arr)
+    yes (array) 
 
 let buttons = document.querySelectorAll (".first, .second, .third")
 buttons.forEach((btn)=> btn.addEventListener("click", function () {
@@ -80,3 +80,8 @@ buttons.forEach((btn)=> btn.addEventListener("click", function () {
     clearfield ()
     yes (newArr)
 }))
+
+DOMSelectors.all.addEventListener("click", function() {
+    clearfield() 
+    yes (array)
+}) 
